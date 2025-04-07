@@ -150,6 +150,7 @@ body {
 	border-radius: 30px;
 	color: var(--clr-primary-cyan-dark);
 	padding: 0.7rem 2rem;
+	border: 2px solid transparent;
 }
 
 .cards__luxury .cards__button {
@@ -168,4 +169,19 @@ body {
 
 .cards__button:focus {
 	outline: none;
+}
+
+@media (min-width: 770px) {
+	body {
+		padding: 7rem;
+	}
+
+	.cards {
+		grid-template-columns: 306px 306px 306px;
+		grid-template-rows: 1fr;
+	}
+
+	.cards__description {
+		margin-bottom: 5.6rem;
+	}
 }
