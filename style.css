@@ -11,7 +11,6 @@
 	--fs-primary: 15px;
 
 	--ff-primary: 'Lexend Deca', sans-serif;
-	--ff-secondary: 'Big Shoulders Display', sans-serif;
 
 	--fw-regular: 400;
 	--fw-bold: 700;
@@ -95,3 +94,67 @@ h6 {
 }
 
 /* General Styling */
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5rem 1.5rem;
+	font-size: var(--fs-primary);
+}
+
+.cards {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	border-radius: 7px;
+	overflow: hidden;
+	font-family: var(--ff-primary);
+}
+
+.cards__sedans {
+	background-color: var(--clr-primary-orange);
+	padding: 3rem 3rem;
+}
+
+.cards__suvs {
+	background-color: var(--clr-primary-cyan-dark);
+	padding: 3rem 3rem;
+}
+
+.cards__luxury {
+	background-color: var(--clr-primary-cyan-darkest);
+	padding: 3rem 3rem;
+}
+
+.cards__title {
+	text-transform: uppercase;
+	color: var(--clr-gray-light);
+	font-size: 1.7rem;
+	margin: 1.9rem 0;
+}
+
+.cards__description {
+	color: var(--clr-transparent-white);
+	margin-bottom: 1.6rem;
+}
+
+.cards__sedans .cards__button {
+	border: none;
+	border-radius: 30px;
+	color: var(--clr-primary-orange);
+	padding: 0.7rem 2rem;
+}
+
+.cards__suvs .cards__button {
+	border: none;
+	border-radius: 30px;
+	color: var(--clr-primary-cyan-dark);
+	padding: 0.7rem 2rem;
+}
+
+.cards__luxury .cards__button {
+	border: none;
+	border-radius: 30px;
+	color: var(--clr-primary-cyan-darkest);
+	padding: 0.7rem 2rem;
+}
