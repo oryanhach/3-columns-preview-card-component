@@ -158,3 +158,14 @@ body {
 	color: var(--clr-primary-cyan-darkest);
 	padding: 0.7rem 2rem;
 }
+
+.cards__button:hover {
+	cursor: pointer;
+	color: var(--clr-gray-light);
+	background: none;
+	border: 2px solid var(--clr-gray-light);
+}
+
+.cards__button:focus {
+	outline: none;
+}
